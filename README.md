@@ -42,8 +42,8 @@ It will parse a XML file like this:
 ```
 
 Into this:  
-_Attributes names are prefixed by '@'_
-_Text stored at `text` attribute_
+-_Attributes names are prefixed by '@'_  
+-_Text stored at `text` attribute_
 ```json
 {
   "data": {
