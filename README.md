@@ -11,7 +11,7 @@ print Xml2json('./example.xml').json
 ```
 
 ##How it looks like
-It will parse a XML like this:
+It will parse a XML file like this:
 ```xml
 <?xml version="1.0"?>
 <data hey="I am" testing="attributes">
