@@ -60,31 +60,25 @@ Into this:
           }, 
           {
             "@direction": "W", 
-            "@name": "Switzerland", 
-            "text": null
+            "@name": "Switzerland"
           }
-        ], 
-        "text": null
+        ]
       }, 
       {
-        "@name": "Singapore", 
-        "text": null
+        "@name": "Singapore"
       }, 
       {
         "@name": "Panama", 
         "neighbor": [
           {
             "@direction": "W", 
-            "@name": "Costa Rica", 
-            "text": null
+            "@name": "Costa Rica"
           }, 
           {
             "@direction": "E", 
-            "@name": "Colombia", 
-            "text": null
+            "@name": "Colombia"
           }
-        ], 
-        "text": null
+        ]
       }
     ], 
     "test": [
@@ -97,8 +91,7 @@ Into this:
       {
         "text": "3"
       }
-    ], 
-    "text": null
+    ]
   }
 }
 ```
