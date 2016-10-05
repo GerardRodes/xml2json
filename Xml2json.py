@@ -10,11 +10,12 @@ class Xml2json:
     
   def parseXml(self, treeElement, json, isRoot = True):
     
-    element = {'text':None}
+    element = {}
     
     if treeElement.text:
       text = treeElement.text.strip()
-      element['text'] = text if text != '' else None
+      if text  != '':
+        element['text'] = text
     
     for attr in treeElement.attrib:
       element['@'+attr] = treeElement.attrib[attr]
