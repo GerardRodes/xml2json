@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-import json as J
 
 class Xml2json:
 
@@ -7,8 +6,6 @@ class Xml2json:
 		self.tree = ET.parse(filePath)
 		self.json = self.parseXml(self.tree.getroot(), {})
 		
-		
-		print J.dumps(self.json, indent=2, sort_keys=True)
 		
 		
 	def parseXml(self, treeElement, json, isRoot = True):
