@@ -15,11 +15,14 @@ It will parse a XML file like this:
 ```xml
 <?xml version="1.0"?>
 <data hey="I am" testing="attributes">
+  <test>1</test>
+  <test>2</test>
+  <test>3</test>
   <country name="Liechtenstein">
     <rank>1</rank>
     <year>2008</year>
     <gdppc>141100</gdppc>
-    <neighbor name="Austria" direction="E"/>
+    <neighbor name="Austria" direction="E">Lorem Ipsum</neighbor>
     <neighbor name="Switzerland" direction="W"/>
   </country>
   <country name="Singapore">
@@ -40,6 +43,7 @@ It will parse a XML file like this:
 
 Into this:  
 _Attributes names are prefixed by '@'_
+_Text stored at `text` attribute_
 ```json
 {
   "data": {
@@ -48,44 +52,53 @@ _Attributes names are prefixed by '@'_
     "country": [
       {
         "@name": "Liechtenstein", 
-        "gdppc": "141100", 
         "neighbor": [
           {
             "@direction": "E", 
-            "@name": "Austria"
+            "@name": "Austria", 
+            "text": "Lorem Ipsum"
           }, 
           {
             "@direction": "W", 
-            "@name": "Switzerland"
+            "@name": "Switzerland", 
+            "text": null
           }
         ], 
-        "rank": "1", 
-        "year": "2008"
+        "text": null
       }, 
       {
         "@name": "Singapore", 
-        "gdppc": "59900", 
-        "neighbor": null, 
-        "rank": "4", 
-        "year": "2011"
+        "text": null
       }, 
       {
         "@name": "Panama", 
-        "gdppc": "13600", 
         "neighbor": [
           {
             "@direction": "W", 
-            "@name": "Costa Rica"
+            "@name": "Costa Rica", 
+            "text": null
           }, 
           {
             "@direction": "E", 
-            "@name": "Colombia"
+            "@name": "Colombia", 
+            "text": null
           }
         ], 
-        "rank": "68", 
-        "year": "2011"
+        "text": null
       }
-    ]
+    ], 
+    "test": [
+      {
+        "text": "1"
+      }, 
+      {
+        "text": "2"
+      }, 
+      {
+        "text": "3"
+      }
+    ], 
+    "text": null
   }
 }
 ```
