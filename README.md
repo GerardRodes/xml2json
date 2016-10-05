@@ -38,7 +38,8 @@ It will parse a XML file like this:
 </data>
 ```
 
-Into this:
+Into this:  
+_Attributes names are prefixed by '@'_
 ```json
 {
   "data": {
