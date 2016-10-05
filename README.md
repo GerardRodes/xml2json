@@ -1,5 +1,5 @@
 # xml2json
-Light and simple class to parse a `.xml` to a `json` dictionary
+Light and simple class to parse a `xml` to a `json` dictionary
 
 ##How to use
 Just import the module and call it providing the path the the XML file as parameter.  
