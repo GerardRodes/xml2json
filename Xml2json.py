@@ -4,7 +4,7 @@ class Xml2json:
 
   def __init__(self, filePath):
     self.tree = ET.parse(filePath)
-    self.json = self.parseXml(self.tree.getroot(), {})
+    self.json = self.parseXml(self.tree.getroot())
     
     
     
