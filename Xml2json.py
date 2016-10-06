@@ -9,7 +9,6 @@ class Xml2json:
     
     
   def parseXml(self, treeElement, json, isRoot = True):
-    
     element = {}
     
     if treeElement.text:
@@ -20,9 +19,7 @@ class Xml2json:
     for attr in treeElement.attrib:
       element['@'+attr] = treeElement.attrib[attr]
     
-    
     childDone = []
-    
     for children in treeElement:
       if children.tag not in childDone:
         childDone.append(children.tag)
@@ -33,6 +30,8 @@ class Xml2json:
           for i, sibling in enumerate(siblings):
             element[children.tag].append({})
             element[children.tag][i] = self.parseXml(sibling, element[children.tag][i], isRoot=False)
+        else:
+          element[children.tag] = self.parseXml(children, {}, isRoot=False)
 
     if isRoot:
       return {treeElement.tag: element}
