@@ -52,6 +52,9 @@ Into this:
     "country": [
       {
         "@name": "Liechtenstein", 
+        "gdppc": {
+          "text": "141100"
+        }, 
         "neighbor": [
           {
             "@direction": "E", 
@@ -62,13 +65,35 @@ Into this:
             "@direction": "W", 
             "@name": "Switzerland"
           }
-        ]
+        ], 
+        "rank": {
+          "text": "1"
+        }, 
+        "year": {
+          "text": "2008"
+        }
       }, 
       {
-        "@name": "Singapore"
+        "@name": "Singapore", 
+        "gdppc": {
+          "text": "59900"
+        }, 
+        "neighbor": {
+          "@direction": "N", 
+          "@name": "Malaysia"
+        }, 
+        "rank": {
+          "text": "4"
+        }, 
+        "year": {
+          "text": "2011"
+        }
       }, 
       {
         "@name": "Panama", 
+        "gdppc": {
+          "text": "13600"
+        }, 
         "neighbor": [
           {
             "@direction": "W", 
@@ -78,7 +103,13 @@ Into this:
             "@direction": "E", 
             "@name": "Colombia"
           }
-        ]
+        ], 
+        "rank": {
+          "text": "68"
+        }, 
+        "year": {
+          "text": "2011"
+        }
       }
     ], 
     "test": [
