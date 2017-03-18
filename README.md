@@ -1,7 +1,7 @@
 # xml2json
 Light and simple class to parse a `xml` file to a `json` dictionary
 
-##How to use
+## How to use
 Just import the module and call it providing the path to the XML file as parameter.  
 It will store the dictionary at the `json` attribute.
 ```python
@@ -10,7 +10,7 @@ from Xml2json import Xml2json
 print Xml2json('./example.xml').json
 ```
 
-##How it looks like
+## How it looks like
 It will parse a XML file like this:
 ```xml
 <?xml version="1.0"?>
